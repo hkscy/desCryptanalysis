@@ -1,0 +1,6 @@
+Open-ended cryptanalysis of the DES cipher motivated by answering the question: 
+
+Suppose one has the output (32 bits), and the subkey (48 bits) for the DES Feistel function.
+Can one reconstruct uniquely the 32 bits of input? 
+
+des_feistel_backwards.py demonstrates that the answer depends on which output is known and is probabalistic. We found that many outputs have colliding inputs which cause the same output. Can this be exploited? 
